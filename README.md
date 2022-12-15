@@ -4,7 +4,7 @@
 
 Le but de cette page est de laisser quelques notes sur des points que nous allons aborder ensemble durant le stage.
 
-Le but du stage est de faire un petit jeu sympa en python. Bien sur, on ne va pas developper un jeu compliqué qui demande beaucoup de travail et de temps. On fait un jeu faisable en 5 jours. Ce sera de la 2D, et on va utiliser une librairie de jeu en python simple à utiliser. J'ai fait des tests avec plein de lib et je propose qu'on utilise `pyglet`. C'est une librairie pas très puissante mais assez simple pour notre besoin
+Le but du stage est de faire un petit jeu sympa en python. Bien sur, on ne va pas developper un jeu compliqué qui demande beaucoup de travail et de temps. On fait un jeu faisable en 5 jours. Ce sera de la 2D, et on va utiliser une librairie de jeu en python simple à utiliser. J'ai fait des tests avec plein de lib et je propose qu'on utilise `pyglet`. C'est une librairie assez simple pour notre besoin
 
 Dans chaque section, je mettrai une `checklist`, la liste des étapes que tu dois faire.
 
