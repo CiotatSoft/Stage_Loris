@@ -1,0 +1,83 @@
+==63294== Memcheck, a memory error detector
+==63294== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==63294== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==63294== Command: python3 exercice23.py
+==63294== Parent PID: 57017
+==63294== 
+==63294== (action at startup) vgdb me ... 
+==63294== 
+==63294== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==63294==   /path/to/gdb python3
+==63294== and then give GDB the following command
+==63294==   target remote | /usr/bin/vgdb --pid=63294
+==63294== --pid is optional if only one valgrind process is running
+==63294== 
+==63453== Warning: invalid file descriptor 1048564 in syscall close()
+==63453== Warning: invalid file descriptor 1048565 in syscall close()
+==63453== Warning: invalid file descriptor 1048566 in syscall close()
+==63453== Warning: invalid file descriptor 1048567 in syscall close()
+==63453==    Use --log-fd=<number> to select an alternative log fd.
+==63453== Warning: invalid file descriptor 1048568 in syscall close()
+==63453== Warning: invalid file descriptor 1048569 in syscall close()
+==63454== Warning: invalid file descriptor 1048564 in syscall close()
+==63454== Warning: invalid file descriptor 1048565 in syscall close()
+==63454== Warning: invalid file descriptor 1048566 in syscall close()
+==63454== Warning: invalid file descriptor 1048567 in syscall close()
+==63454==    Use --log-fd=<number> to select an alternative log fd.
+==63454== Warning: invalid file descriptor 1048568 in syscall close()
+==63454== Warning: invalid file descriptor 1048569 in syscall close()
+==63455== Warning: invalid file descriptor 1048564 in syscall close()
+==63455== Warning: invalid file descriptor 1048565 in syscall close()
+==63455== Warning: invalid file descriptor 1048566 in syscall close()
+==63455== Warning: invalid file descriptor 1048567 in syscall close()
+==63455==    Use --log-fd=<number> to select an alternative log fd.
+==63455== Warning: invalid file descriptor 1048568 in syscall close()
+==63455== Warning: invalid file descriptor 1048569 in syscall close()
+==63456== Warning: invalid file descriptor 1048564 in syscall close()
+==63456== Warning: invalid file descriptor 1048565 in syscall close()
+==63456== Warning: invalid file descriptor 1048566 in syscall close()
+==63456== Warning: invalid file descriptor 1048567 in syscall close()
+==63456==    Use --log-fd=<number> to select an alternative log fd.
+==63456== Warning: invalid file descriptor 1048568 in syscall close()
+==63456== Warning: invalid file descriptor 1048569 in syscall close()
+==63458== Warning: invalid file descriptor 1048564 in syscall close()
+==63458== Warning: invalid file descriptor 1048565 in syscall close()
+==63458== Warning: invalid file descriptor 1048566 in syscall close()
+==63458== Warning: invalid file descriptor 1048567 in syscall close()
+==63458==    Use --log-fd=<number> to select an alternative log fd.
+==63458== Warning: invalid file descriptor 1048568 in syscall close()
+==63458== Warning: invalid file descriptor 1048569 in syscall close()
+==63294== Invalid read of size 8
+==63294==    at 0x40286C8: strncmp (strcmp.S:172)
+==63294==    by 0x400668D: is_dst (dl-load.c:216)
+==63294==    by 0x400810E: _dl_dst_count (dl-load.c:253)
+==63294==    by 0x400810E: expand_dynamic_string_token (dl-load.c:395)
+==63294==    by 0x40082B7: fillin_rpath.isra.0 (dl-load.c:483)
+==63294==    by 0x4008602: decompose_rpath (dl-load.c:654)
+==63294==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==63294==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==63294==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==63294==    by 0x4003494: openaux (dl-deps.c:64)
+==63294==    by 0x4B16C27: _dl_catch_exception (dl-error-skeleton.c:208)
+==63294==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==63294==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==63294==    by 0x4B16C27: _dl_catch_exception (dl-error-skeleton.c:208)
+==63294==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==63294==  Address 0x78a0799 is 9 bytes inside a block of size 15 alloc'd
+==63294==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==63294==    by 0x40271FF: malloc (rtld-malloc.h:56)
+==63294==    by 0x40271FF: strdup (strdup.c:42)
+==63294==    by 0x4008594: decompose_rpath (dl-load.c:629)
+==63294==    by 0x400ABF5: cache_rpath (dl-load.c:696)
+==63294==    by 0x400ABF5: cache_rpath (dl-load.c:677)
+==63294==    by 0x400ABF5: _dl_map_object (dl-load.c:2165)
+==63294==    by 0x4003494: openaux (dl-deps.c:64)
+==63294==    by 0x4B16C27: _dl_catch_exception (dl-error-skeleton.c:208)
+==63294==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==63294==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==63294==    by 0x4B16C27: _dl_catch_exception (dl-error-skeleton.c:208)
+==63294==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==63294==    by 0x4B16C27: _dl_catch_exception (dl-error-skeleton.c:208)
+==63294==    by 0x400E34D: _dl_open (dl-open.c:883)
+==63294== 
+==63294== (action on error) vgdb me ... 
